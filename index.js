@@ -2,6 +2,10 @@ const fs = require('fs');
 const http = require('http');
 const url = require('url');
 
+const data = fs.readFileSync(`${__dirname}/dev-data/data.json`, 'utf-8');
+const dataObj = JSON.parse(data);
+
+
 // fs.readFile('./txt/start.txt', 'utf-8', (err, data1) => {
 //     if (err) return console.log('ERROR! *')
 
@@ -18,8 +22,16 @@ const url = require('url');
 // console.log('Will read file!');
 
 const server = http.createServer((req, res) => {
-    if (rest.url === '/overview' || rest.url === '/') res.end('This is the OVERVIEW');
-    else if (rest.url === '/PRODUCT') res.end('This is the PRODUCT');
+    const path = req.url;
+
+    if (path === '/overview' || path === '/') res.end('This is the OVERVIEW');
+    else if (path === '/PRODUCT') res.end('This is the PRODUCT');
+
+    else if (path === '/api') {
+        res.writeHead(200, { 'Content-type': 'application/json' })
+        res.end(data);
+    }
+
     else {
         res.writeHead(404, { 'Content-type': 'text/html', 'my-own-header': 'hello world' });
         res.end('Page not found!');
