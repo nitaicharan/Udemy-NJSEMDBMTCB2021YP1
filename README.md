@@ -2,10 +2,10 @@
 ![JavaScript][javascript-shield]
 ![Node.js][nodejs-shield]
 
-<p align="center">:bangbang: Documentation available to access at: https://nitaicharan.github.io/NJSEMDBMTCB2021YP1 :bangbang:</p>
+<p align="center">:bangbang: Documentation available to access at: https://nitaicharan.github.io/Udemy-NJSEMDBMTCB2021YP1 :bangbang:</p>
 
 <!--[![](PREVIEW.png)](https://nitaicharan.github.io/Udemy-CCDNJSMDB1/)-->
-<a href="https://nitaicharan.github.io/NJSEMDBMTCB2021YP1">
+<a href="https://nitaicharan.github.io/Udemy-NJSEMDBMTCB2021YP1">
   <p align="center">
     <img src="PREVIEW.png">
   </p>
